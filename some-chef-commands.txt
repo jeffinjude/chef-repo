@@ -1,0 +1,9 @@
+commands :
+1)apply a recipe file : chef-apply <recipe-file>
+2)generate a cookbook : chef generate cookbook <cookbook-name>
+3)generate a template : chef generate template <cookbook-name> <file-name>
+4)run a cookbook : chef-client --local-mode --runlist 'recipe[learn_chef_apache2]'
+5)to download cookbook from chef supermarket : knife cookbook site download <cookbook-name>
+6)upload cookbook to chef server : knife cookbook upload <cookbook-name>
+7)bootstarp a node : knife bootstrap ec2-54-67-74-215.us-west-1.compute.amazonaws.com -x ubuntu -i /home/ubuntu/pemstoconnect/itcgbastion.pem --sudo --node-name cnode1 --run-list 'recipe[learn_chef_apache2]'
+8)get node list : knife node list
